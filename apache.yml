@@ -7,9 +7,9 @@
       yum: 
         name: httpd
         state: present
-      name: "Install packages"
+      name: "Installing webServer"
     - 
-      name: "Start Apache server"
+      name: "Start web server"
       service: 
         enabled: true
         name: httpd
@@ -18,5 +18,5 @@
       copy: 
         dest: /var/www/html/
         src: index.html
-      name: "Deploy static website"
+      name: "Deploying static website"
 
